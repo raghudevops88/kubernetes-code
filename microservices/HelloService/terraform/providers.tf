@@ -1,9 +1,6 @@
 provider "aws" {
   region = "us-east-1"
-  access_key = "AKIAY4C4TDU2DRNQD546"
-  secret_key = "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"
-  
-}
+ 
 
 provider "helm" {
   kubernetes {
