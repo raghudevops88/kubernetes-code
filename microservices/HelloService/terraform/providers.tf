@@ -1,15 +1,14 @@
 provider "aws" {
   region = "us-east-1"
-export AWS_ACCESS_KEY_ID="AKIAY4C4TDU2B2XA4JOC"
-export AWS_SECRET_ACCESS_KEY="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"
+export AWS_ACCESS_KEY_ID="AKIAY4C4TDU2DRNQD546"
+export AWS_SECRET_ACCESS_KEY="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"
   
 }
 
 provider "helm" {
   kubernetes {
-    host                   = data.aws_eks_cluster.cluster.endpoint
-    token                  = data.aws_eks_cluster_auth.cluster.token
-    cluster_ca_certificate = base64decode(data.aws_eks_cluster.cluster.certificate_authority[0].data)
+    host = data.aws_eks_cluster.cluster.endpoint
+
   }
 }
 
