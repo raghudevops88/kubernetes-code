@@ -1,7 +1,7 @@
 provider "aws" {
   region = "us-east-1"
-export AWS_ACCESS_KEY_ID="AKIAY4C4TDU2DRNQD546"
-export AWS_SECRET_ACCESS_KEY="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"
+  access_key = "AKIAEXAMPLE123"
+  secret_key = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
   
 }
 
